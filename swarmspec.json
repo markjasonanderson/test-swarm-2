@@ -1,0 +1,130 @@
+{ 
+  "name": "My swarm 2",
+  "description" : "This is a second example swarm specification",
+  "endpointspecs" : 
+  { 
+    "rpi-ep-1" : {
+      "endpoint-arm" : {
+        "type" : "linux",
+        "kernel" : "rpi-kernel-1",
+        "rootfs" : "rpi-rootfs-1",
+        "rootfs-type": "ext3",
+        "RAM" : 64,
+        "CPU": "arm926",
+        "Machine": "versatilepb"
+      }
+    },
+
+    "rpi-ep-2" : { 
+      "endpoint-arm" : {
+        "kernel" : "rpi-kernel-2",
+        "rootfs" : "rpi-rootfs-2",
+        "rootfs-type": "ext3",
+        "RAM" : 256,
+        "CPU": "arm926",
+        "Machine": "versatilepb"
+      }
+    }
+  },
+  "nodespecs" : [
+    {
+      "name" : "firewall",
+      "icon" : "glyphicons building"
+    },
+    {
+      "name" : "WiMAX-sector",
+      "icon" : "glyphicons wifi_alt"
+    },
+    {
+      "name" : "WiMAX-base-station",
+      "icon" : "glyphicons screenshot"
+    }
+  ],
+
+  "nodes" : [
+    {
+      "name" : "root",
+      "spec" : "firewall", 
+      "endpoints" : [],
+      "children" : [
+        { 
+          "name" : "cowes",
+          "spec" : "WiMAX-base-station",
+          "endpoints" : [],
+          "children" : [
+            {
+              "name" : "cowes-sector-1",
+              "spec" : "WiMAX-base-sector",
+              "parent" : "cowes",
+              "endpoints" : [
+                {
+                  "count" : 100,
+                  "name-base" : "rpi-11-",
+                  "spec" : "rpi-ep-1"
+                },
+                {
+                  "count" : 50,
+                  "name-base" : "rpi-12-",
+                  "spec" : "rpi-ep-2"
+                }
+              ]
+            },
+            {
+              "name" : "cowes-sector-2",
+              "spec" : "WiMAX-base-sector",
+              "parent" : "cowes",
+              "endpoints" : [
+                {
+                  "count" : 100,
+                  "name-base" : "rpi-21-",
+                  "spec" : "rpi-ep-1"
+                },
+                {
+                  "count" : 50,
+                  "name-base" : "rpi-22-",
+                  "spec" : "rpi-ep-2"
+                }
+              ]
+            },
+            {
+              "name" : "cowes-sector-3",
+              "spec" : "WiMAX-base-sector",
+              "parent" : "cowes",
+              "endpoints" : [
+                {
+                  "count" : 100,
+                  "name-base" : "rpi-31-",
+                  "spec" : "rpi-ep-1"
+                },
+                {
+                  "count" : 50,
+                  "name-base" : "rpi-32-",
+                  "spec" : "rpi-ep-2"
+                }
+              ]
+            },
+            {
+              "name" : "cowes-sector-4",
+              "spec" : "WiMAX-base-sector",
+              "parent" : "cowes",
+              "endpoints" : [
+                {
+                  "count" : 100,
+                  "name-base" : "rpi-41-",
+                  "spec" : "rpi-ep-1"
+                },
+                {
+                  "count" : 50,
+                  "name-base" : "rpi-42-",
+                  "spec" : "rpi-ep-2"
+                }
+              ]
+            }
+          ] 
+        }
+      ]
+    }
+  ]
+} 
+
+
