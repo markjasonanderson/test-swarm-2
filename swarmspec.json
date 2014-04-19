@@ -59,12 +59,12 @@
               "endpoints" : [
                 {
                   "count" : 100,
-                  "name-base" : "rpi-11-",
+                  "namebase" : "rpi-11-",
                   "spec" : "rpi-ep-1"
                 },
                 {
                   "count" : 50,
-                  "name-base" : "rpi-12-",
+                  "namebase" : "rpi-12-",
                   "spec" : "rpi-ep-2"
                 }
               ]
@@ -76,12 +76,12 @@
               "endpoints" : [
                 {
                   "count" : 100,
-                  "name-base" : "rpi-21-",
+                  "namebase" : "rpi-21-",
                   "spec" : "rpi-ep-1"
                 },
                 {
                   "count" : 50,
-                  "name-base" : "rpi-22-",
+                  "namebase" : "rpi-22-",
                   "spec" : "rpi-ep-2"
                 }
               ]
@@ -93,12 +93,12 @@
               "endpoints" : [
                 {
                   "count" : 100,
-                  "name-base" : "rpi-31-",
+                  "namebase" : "rpi-31-",
                   "spec" : "rpi-ep-1"
                 },
                 {
                   "count" : 50,
-                  "name-base" : "rpi-32-",
+                  "namebase" : "rpi-32-",
                   "spec" : "rpi-ep-2"
                 }
               ]
@@ -110,12 +110,12 @@
               "endpoints" : [
                 {
                   "count" : 100,
-                  "name-base" : "rpi-41-",
+                  "namebase" : "rpi-41-",
                   "spec" : "rpi-ep-1"
                 },
                 {
                   "count" : 50,
-                  "name-base" : "rpi-42-",
+                  "namebase" : "rpi-42-",
                   "spec" : "rpi-ep-2"
                 }
               ]
