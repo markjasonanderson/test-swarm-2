@@ -58,7 +58,7 @@
               "parent" : "cowes",
               "endpoints" : [
                 {
-                  "count" : 100,
+                  "count" : 12000,
                   "namebase" : "rpi-11-",
                   "spec" : "rpi-ep-1"
                 },
