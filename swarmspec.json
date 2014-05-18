@@ -53,7 +53,7 @@
           "endpoints" : [],
           "children" : [
             {
-              "name" : "cowes-sector-1",
+              "name" : "really-big-sector",
               "spec" : "WiMAX-base-sector",
               "parent" : "cowes",
               "endpoints" : [
